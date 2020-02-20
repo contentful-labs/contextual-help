@@ -1,0 +1,8 @@
+{
+  "id": "contextual-help",
+  "name": "contextual-help",
+  "srcdoc": "./build/index.html",
+  "fieldTypes": [
+    "Symbol"
+  ]
+}
