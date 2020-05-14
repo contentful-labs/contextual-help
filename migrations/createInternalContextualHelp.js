@@ -2,7 +2,7 @@ module.exports = function(migration) {
   const internalContextualHelp = migration
     .createContentType("internalContextualHelp")
     .name("Internal - Contextual Help")
-    .description("sfgiuhsdfghkdfsjkdkbfjhbdf\nbsdfsdfbnjkbdfkjhbdkhj")
+    .description("Allows to add detailed explanations for how to use a specific Content Type")
     .displayField("contentTypeId");
 
   internalContextualHelp
