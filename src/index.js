@@ -38,7 +38,7 @@ export class Asset extends React.Component {
 
   render() {
     if (this.state.asset) {
-      return <img src={this.state.asset.fields.file['en-US'].url + '?w=750'} />
+      return <img src={this.state.asset.fields.file[this.props.sdk.locales.default].url + '?w=750'} />
     }
 
     return <SkeletonContainer><SkeletonImage width={750} height={100} /></SkeletonContainer>
@@ -87,7 +87,7 @@ export class DialogExtension extends React.Component {
       return (
         <Typography className={styles.dialog}>{
           documentToReactComponents(
-            this.state.entry.fields.helpText['en-US'],
+            this.state.entry.fields.helpText[this.props.sdk.locales.default],
             {
               renderNode: {
                 [BLOCKS.PARAGRAPH]: (node, children) => <Paragraph>{children}</Paragraph>,
